@@ -23,6 +23,38 @@
             <h1 class="header-checkout">Medium Size Teddy Bear</h1>
             <p class="price-text">₱1,250.75</p>
         </div>
+
+        <!-- Right Content -->
+        <div class="right-container">
+            <h1 id="brand-title">Payment Method</h1>
+            <br>
+            <div class="inputs-container">
+                <label for="card-name">Card Name</label>
+                <input type="text" name="card-name" id="card-name" placeholder="Louie Jones" required>
+                <br>
+                <label for="card-number">Card Number</label>
+                <input type="text" name="card-number" id="card-number" placeholder="4916-4391-2911-4471" required>
+                <br>
+                <div class="two-columns">
+                    <div class="expiration-container">
+                        <label for="expiration">Expiration Date</label><br>
+                <input type="text" name="expiration" id="expiration" placeholder="MM/YY" required>
+                    </div>
+                    <div class="cvv-container">
+                        <label for="cvv">CVV</label><br>
+                <input type="text" name="cvv" id="cvv" placeholder="123" min="1" max="3" required>
+                    </div>
+                </div>
+                <br>
+            </div>
+            <br>
+            <div class="save-info">
+                <input type="checkbox" name="save-credit" class="save-credit">
+                <p class="info-text">Save credit card info</p>
+            </div>
+            <button type="submit" class="submit-btn">Sign Up</button>
+            <p class="existing-text">Already have an account? <a href="" class="login">LOG IN</a></p>
+        </div>
     </section>
 </body>
 

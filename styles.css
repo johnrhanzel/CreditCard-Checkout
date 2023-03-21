@@ -1,0 +1,141 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow-y: auto;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* Media for Desktop */
+@media screen and (min-width: 850px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 50vw);
+        grid-template-rows: repeat(1, auto);
+        height: 100%;
+    }
+
+    /* Left Container */
+    .left-container {
+        background-image: url(./assets/teddy\ bear.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-left: 2em;
+        padding-bottom: 4em;
+    }
+
+    .header-checkout,
+    .price-text {
+        font-family: 'Montserrat', sans-serif;
+        text-align: left;
+    }
+
+    .header-checkout {
+        font-weight: 500;
+        width: 7em;
+    }
+
+    .price-text {
+        font-weight: 500;
+        font-size: 1.3em;
+        margin: 0;
+    }
+
+    /* Right Container */
+    .right-container {
+        background: #131618;
+    }
+
+    #brand-title {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        text-align: center;
+        color: #fff;
+        padding-top: 4vh;
+    }
+
+    label {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 1.2em;
+        align-content: flex-start;
+        color: #FEFEFE;
+        margin-bottom: .5em;
+    }
+
+    input::placeholder {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        color: #fff;
+        font-size: 1.2em;
+        padding-left: .5em;
+    }
+
+    .inputs-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 8vw;
+    }
+
+    #card-name,
+    #card-number,
+    #expiration {
+        width: 40em;
+        height: 3.5em;
+        border: 1px solid #191A19;
+        border-radius: 1em;
+        background-color: #4A5253;
+        color: #fff;
+        padding-left: .5em;
+    }
+
+    .two-columns {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0 14.5em;
+    }
+
+    #expiration,
+    #cvv {
+        width: 11em;
+        height: 3.5em;
+        border: 1px solid #191A19;
+        border-radius: 1em;
+        background-color: #4A5253;
+        color: #fff;
+        padding-left: .5em;
+    }
+
+    input.save-credit {
+        transform: scale(2);
+        margin: 30px;
+    }
+
+    input[type=checkbox] {
+        accent-color: black;
+    }
+
+    .submit-btn {
+        font-family: 'Lato', sans-serif;
+        background-color: #4E9F3D;
+        color: #fff;
+        width: 40em;
+        height: 3.5em;
+        border: none;
+        border-radius: 1em;
+    }
+
+    .existing-text,
+    .login {
+        font-family: 'Lato', sans-serif;
+        color: #000;
+    }
+}
